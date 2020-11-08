@@ -1,0 +1,208 @@
+:root {
+  --rosa: #ff4c68;
+  --hellrose: #ef8172;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+p {
+  color: black;
+  /*#8f8f8f;*/
+}
+
+/*--------HEADINGS-------*/
+.big-heading {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: bolder;
+  color: white;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  /*color: green;*/
+}
+
+/*-------CONTAINERS----------*/
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/*-------SectionS-------*/
+.colored-section {
+  background-color: var(--rosa);
+  color: #fff;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/*--------NAVEGATION BAR------------*/
+.navbar {
+  padding-bottom: 4.5rem;
+  margin-left: -1rem
+}
+
+.navbar-brand {
+  font-family: 'Merriweather', cursive;
+  /*SE PARECE A TIFFANY*/
+  font-size: 2rem;
+}
+
+.nav-item {
+  padding: 0 1.1rem;
+}
+
+a.nav-link {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+/*---DOWNLOAD BUTTONS---*/
+.download-button {
+  margin: 5% 3% 2% 0%;
+}
+
+/*-------TITLE-----*/
+#title {
+  text-align: left;
+}
+#title.container-fluid {
+
+  padding: 3% 15%;
+  /* top, left-rigth, bottom*/
+}
+
+/*-------TITLE-IMG ---*/
+.title-image {
+  width: 48%;
+  transform: rotate(25deg);
+  /*PARA ROTAR LA FOTO*/
+  /*margin-top: -2.5rem;*/
+  position: absolute;
+  right: 30%;
+}
+
+#features {
+  position: relative;
+  z-index: -1;
+  /*con este se pone la foto en 1er plano como si saliera*/
+}
+
+.feature-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  /*  text-align: center; /*PARA CENTRAR TODO*/
+  padding: 4.5%;
+}
+
+.icon {
+  color: var(--hellrose);
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+color: var(--rosa);
+}
+
+/*------------------TESTIMONIALS--------------*/
+#testimonials {
+  /*padding: 7% 15%;*/
+  /*  text-align: center;*/
+  background-color: var(--hellrose);
+  /*color: #fff;*/
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  /*color: blue;*/
+}
+
+.testimonials-img {
+  border-radius: 150px;
+  max-width: 14%;
+  margin: 3rem;
+  margin-top: 1rem;
+}
+
+/*------------PRESS-------------*/
+#press {
+  background-color: var(--hellrose);
+  /*  text-align: center; */
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 13%;
+  margin: 20px 20px 50px;
+}
+
+/*---------------PRICING-----------------*/
+#pricing {
+  padding: 6.25rem;
+  /*  text-align: center;*/
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card {
+  height: 396px;
+}
+
+/*------CTA Section----*/
+/*se pude borrar por laquello de las sections colored y white*/
+/*#cta {
+  background-color: var(--rosa);
+  color: whit
+    /*  text-align: center;/* al poner esta prop en la seccion centra todo*/
+/*}*/
+/*-----Footer----*/
+#footer {
+  /*padding: 7% 15%;*/
+  /*  text-align: center;*/
+}
+
+.social-icon {
+  margin: 20px 10px;
+  font-size: 30px;
+  color: var(--rosa);
+}
+
+@media (max-width:1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    padding-top: 1.5rem;
+  }
+}
